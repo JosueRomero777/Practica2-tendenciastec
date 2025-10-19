@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360">
+  <style> .box{fill:#f8f9fa;stroke:#343a40;stroke-width:1.5;} .text{font-family:Arial, sans-serif;font-size:14px;fill:#212529;} .title{font-size:18px;font-weight:700;} </style>
+  <rect x="10" y="10" width="780" height="340" rx="8" ry="8" fill="#ffffff" stroke="#dee2e6"/>
+  <text x="30" y="40" class="text title">Figura 1-1. Diagrama de contenedores</text>
+
+  <rect class="box" x="60" y="80" width="220" height="100" rx="8"/>
+  <text x="80" y="110" class="text" style="font-weight:700;">Host (anfitrión)</text>
+  <text x="80" y="130" class="text">IP: localhost</text>
+
+  <rect class="box" x="320" y="60" width="200" height="120" rx="8"/>
+  <text x="340" y="95" class="text" style="font-weight:700;">nginx1</text>
+  <text x="340" y="115" class="text">Puerto 80 (mapeado 8089)</text>
+
+  <rect class="box" x="560" y="60" width="200" height="120" rx="8"/>
+  <text x="580" y="95" class="text" style="font-weight:700;">nginx2</text>
+  <text x="580" y="115" class="text">Puerto 80 (mapeado 8090)</text>
+
+  <line x1="160" y1="120" x2="320" y2="120" stroke="#0d6efd" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="280" y1="140" x2="560" y2="140" stroke="#0d6efd" stroke-width="2" marker-end="url(#arr)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0d6efd" />
+    </marker>
+  </defs>
+
+  <text x="180" y="160" class="text">Tráfico HTTP</text>
+</svg>

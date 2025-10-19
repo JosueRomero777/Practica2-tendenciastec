@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <style> .step{fill:#fff;stroke:#495057;stroke-width:1.5;rx:8;ry:8;} .text{font-family:Arial, sans-serif;font-size:14px;fill:#212529;} .title{font-size:18px;font-weight:700;} </style>
+  <rect x="10" y="10" width="780" height="400" rx="8" ry="8" fill="#ffffff" stroke="#dee2e6"/>
+  <text x="30" y="40" class="text title">Figura 2-1. Flujo resumido del procedimiento</text>
+
+  <rect x="60" y="80" width="240" height="60" rx="8" fill="#f8f9fa" stroke="#adb5bd"/>
+  <text x="80" y="112" class="text" style="font-weight:700;">1. docker run nginx1</text>
+  <text x="80" y="132" class="text">(mapea 8089)</text>
+
+  <rect x="60" y="180" width="240" height="60" rx="8" fill="#fff" stroke="#adb5bd"/>
+  <text x="80" y="212" class="text" style="font-weight:700;">2. docker cp index1.html</text>
+
+  <rect x="60" y="280" width="240" height="60" rx="8" fill="#f8f9fa" stroke="#adb5bd"/>
+  <text x="80" y="312" class="text" style="font-weight:700;">3. Editar y docker cp de vuelta</text>
+
+  <line x1="180" y1="140" x2="180" y2="180" stroke="#0d6efd" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="180" y1="240" x2="180" y2="280" stroke="#0d6efd" stroke-width="2" marker-end="url(#arr)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0d6efd" />
+    </marker>
+  </defs>
+</svg>
